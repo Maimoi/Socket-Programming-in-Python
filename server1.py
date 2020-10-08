@@ -5,5 +5,6 @@ s.listen(5)
 while True:
     client_socket, address = s.accept()
     print(f"Conncetion established  to {address} successfully!")
-    client_socket.send(bytes("Socket Programming", "utf-8"))
+    client_socket.send(bytes("Socket Programming in Python", "utf-8"))
+    client_socket.close()
 
